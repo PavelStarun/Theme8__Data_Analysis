@@ -3,8 +3,6 @@ import csv
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
-
 driver = webdriver.Chrome()
 
 url = 'https://www.divan.by/category/ortopedicheskie-divany-dlya-sna'
@@ -33,4 +31,3 @@ with open("sofas.csv", 'w', newline='', encoding='utf-8') as file:
     writer.writerows(category)
 
 driver.quit()
-
